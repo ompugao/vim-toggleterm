@@ -4,7 +4,7 @@ function! s:open(buf) abort
   botright split
   if a:buf > 0
     exec 'buffer ' . s:termname
-	call feedkeys('i')
+	"call feedkeys('i')
   else
     terminal ++curwin
     startinsert
